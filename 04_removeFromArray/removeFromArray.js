@@ -1,13 +1,17 @@
-const removeFromArray = function(arr,num) {
+const removeFromArray = function(arr,...num) {
     const newArr = []
     let p = 0
+    
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== num) {
+        if (!num.includes(arr[i])) {
             newArr[p] = arr[i]
             p++
         }
         
     }
+
+    
+
     return newArr
 };
 
