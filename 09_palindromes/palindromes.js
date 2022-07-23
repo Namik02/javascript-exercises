@@ -1,4 +1,5 @@
 const palindromes = function (string) {
+    
     newString = string.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
     newString = [...newString];
     newString = newString.filter(i => i !==" ")
